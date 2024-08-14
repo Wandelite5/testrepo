@@ -13,5 +13,4 @@ ggplot(aes(x=disp, y=mpg), data = mtcars) + ggtitle("wande's work") + geom_point
 mtcars$gear <- as.factor(mtcars$gear)
 ggplot(aes(x=gear, y=mpg), data = mtcars) + geom_boxplot() 
 
-ggplot(aes(x=gear, y=mpg, fill = gear), data = mtcars) + geom_boxplot(alpha = 1)
-theme(legend.position = "none")
+ggplot(aes(x=gear, y=mpg, fill = gear), data = mtcars) + geom_boxplot(alpha = 1) + theme(legend.position = "none")
